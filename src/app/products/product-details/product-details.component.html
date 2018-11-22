@@ -1,0 +1,12 @@
+<button routerLink="/products">BACK</button>
+
+<h1>Product Details</h1>
+
+<div *ngIf="product">
+<h2>{{product.id}}</h2>
+<h2>{{product.name}}</h2>
+</div>
+
+<div *ngIf="!product">
+  <h2>Customer not found</h2>
+</div>

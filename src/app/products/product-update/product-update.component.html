@@ -1,0 +1,29 @@
+<div id="main-container">
+  <button id="back-button" routerLink="/products">BACK</button>
+
+  <form [formGroup]="productForm" (ngSubmit)="updateProduct()">
+
+    <label>
+      <input type="text" formControlName="name">
+    </label>
+
+    <label>
+    <textarea type="text" formControlName="desc" rows="5" cols="30">
+    </textarea>
+    </label>
+
+    <label>
+      <input type="text" formControlName="price">
+    </label>
+
+    <label>
+      <input type="text" formControlName="type">
+    </label>
+
+    <label>
+      <input type="text" formControlName="imageLink">
+    </label>
+
+    <button type="submit" id="update-product-button">Update Product</button>
+  </form>
+</div>

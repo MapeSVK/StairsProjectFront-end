@@ -1,0 +1,56 @@
+#main-container {
+  width: 23%;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  color: #fff;
+  background-color: #1f56ad;
+  padding: 5px 9px;
+  border: 1px solid #1f56ade8;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+label {
+  width: 100%;
+}
+
+#add-button {
+  background-color: #1f56ade8;
+  border: 1px solid #1f56ade8;
+  color: #fff;
+  border-radius: 8px;
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+  font-size: 14px;
+}
+
+#back-button {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  color: #1f56ad94;
+  border-radius: 8px;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ccc;
+  opacity: 1; /* Firefox */
+  font-size: 12px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ccc;
+  font-size: 12px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ccc;
+  font-size: 12px;
+}

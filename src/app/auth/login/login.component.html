@@ -1,0 +1,16 @@
+<div id="main-container">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="mt-2 mb-2">
+      <input placeholder="username" type="text" formControlName="Username">
+    </div>
+    <div class="mt-2 mb-2">
+      <input placeholder="password" type="password" formControlName="Password">
+    </div>
+    <div id="controls">
+      <button id="login-button" class="mt-2 mb-2" type="submit">Login</button>
+      <p id="please-register-text">Not user yet? Please register!</p>
+      <button id="register-button" routerLink="/register">Register</button>
+    </div>
+  </form>
+
+</div>

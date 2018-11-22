@@ -1,0 +1,24 @@
+<div id="main-container">
+
+  <a id="add-new-product-button" routerLink="/product-add">Add Product</a>
+  <ul *ngIf="products" id="menu-with-products">
+    <li *ngFor="let product of products" id="product">
+      <a routerLink="/products/{{product.id}}" class="product-name">
+        {{product.name}}
+      </a>
+      <p class="product-desc">
+        {{product.desc}}
+      </p>
+      <p class="product-price">
+        {{product.price}}
+      </p>
+
+      <div class="controls">
+      <a routerLink="/product-update/{{product.id}}" class="update-product-button">Update</a>
+      <a (click)="deleteProduct(product.id)" class="delete-product-button">Delete</a>
+      </div>
+    </li>
+  </ul>
+  <h4 *ngIf="!products" id="loading">Loading........</h4>
+
+</div>

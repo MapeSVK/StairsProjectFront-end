@@ -1,0 +1,41 @@
+#main-container {
+  width: 23%;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  color: #fff;
+  background-color: #1f56ad;
+  padding: 5px 9px;
+  border: 1px solid #1f56ade8;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+#register-button {
+  background-color: #1f56ade8;
+  border: 1px solid #1f56ade8;
+  color: #fff;
+  border-radius: 8px;
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+  font-size: 14px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ccc;
+  opacity: 1; /* Firefox */
+  font-size: 12px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ccc;
+  font-size: 12px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ccc;
+  font-size: 12px;
+}

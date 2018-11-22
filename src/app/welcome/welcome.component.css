@@ -1,0 +1,13 @@
+#first-home-image img {
+  width: 48%;
+  float: left;
+}
+
+#second-home-image img{
+  width: 48%;
+  float: right;
+}
+
+#home-content {
+  width: 100%;
+}

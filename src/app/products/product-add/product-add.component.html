@@ -1,0 +1,30 @@
+
+<div id="main-container">
+<button id="back-button" routerLink="/products">GO BACK</button>
+
+<form [formGroup]="productForm" (ngSubmit)="saveProduct()">
+
+  <label>
+    <input type="text" formControlName="name" placeholder="name">
+  </label>
+
+  <label>
+    <textarea type="text" formControlName="desc" placeholder="description" rows="5" cols="30">
+    </textarea>
+  </label>
+
+  <label>
+    <input type="text" formControlName="price" placeholder="price">
+  </label>
+
+  <label>
+    <input type="text" formControlName="type" placeholder="type">
+  </label>
+
+  <label>
+    <input type="text" formControlName="imageLink" placeholder="add image link">
+  </label>
+
+  <button type="submit" id="add-button">Save Product</button>
+</form>
+</div>

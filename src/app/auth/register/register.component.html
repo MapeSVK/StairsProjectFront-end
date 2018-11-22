@@ -1,0 +1,10 @@
+<div id="main-container">
+<form [formGroup]="registerForm" (ngSubmit)="register()">
+  <input placeholder="choose username" type="text" formControlName="Username">
+  <input placeholder="choose password" type="password" formControlName="Password">
+
+  <div id="controls">
+  <button type="submit" id="register-button">Register</button>
+  </div>
+</form>
+</div>
